@@ -16,8 +16,11 @@ def main():
     expression = " ".join(sys.argv[1:])
     try:
         result = calculator.evaluate(expression)
-        to_print = render(expression, result)
-        print(to_print)
+        if result is None:
+            print("Result is None")
+        else:
+            to_print = render(expression, result)
+            print(to_print)
     except Exception as e:
         print(f"Error: {e}")
 

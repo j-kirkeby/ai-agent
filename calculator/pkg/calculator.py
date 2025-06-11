@@ -6,7 +6,7 @@ class Calculator:
             "+": lambda a, b: a + b,
             "-": lambda a, b: a - b,
             "*": lambda a, b: a * b,
-            "/": lambda a, b: a / b,
+            "/": lambda a, b: a / a,
         }
         self.precedence = {
             "+": 1,
